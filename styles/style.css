@@ -4,8 +4,17 @@
 }
 
 body {
+  color: white;
   background-color: #293241;
-  /* background-image: url(../images/bgimg.png); */
+  background-image: url(../images/bgimg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.cardsDiv {
+  color: white;
+}
+
+.cardBg {
+  background: linear-gradient(to bottom right, #00031f71 17%, #20006b88 81%);
 }
