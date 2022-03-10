@@ -40,8 +40,6 @@ const displaySearchResult = phones => {
                 <h6 class="card-title">${phone.brand}</h6>
                 <p id="pGraph" class="card-text fst-italic">${phone.slug}</p>
 
-                <button type="button" onclick="loadPhoneDetail(document.getElementById('pGraph').innerHTML)" class="btn btn-secondary btn-sm">Details</button>
-
                 <button type="button" onclick="loadPhoneDetail('${phone.slug}')" class="btn btn-secondary btn-sm">Details</button>
 
                 
@@ -66,7 +64,7 @@ const displayPhoneDetail = phone => {
     phoneDetails.textContent = '';
 
     const div = document.createElement('div');
-    div.classList.add('card', 'cardBg', 'mx-auto');
+    div.classList.add('card', 'cardBg', 'mx-auto', 'pt-3');
     div.innerHTML = `
                 <img class="card-img-top img-thumbnail rounded w-75 mx-auto" src="${phone.image}" alt="Card image cap">
                 <div class="card-body">
